@@ -40,22 +40,24 @@ body:
     id: minecraftversion
     attributes:
       label: What Minecraft version are you seeing the problem on?
-      multiple: true
+      multiple: false
       options:
         - Vanilla 1.20
         - Vanilla 1.19.4
         - Modded 1.19.4  
-  - type: textarea
-    id: logs
+  - type: dropdown
+    id: mapversion
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Map Version
+      description: What Map version of our software are you running?
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Latest Beta 1.0
+        - Alpha 007
+        - Alpha 006
+        - Alpha 005
+        - Alpha 004
+        - Alpha 003
+        - Alpha 002
+        - Alpha 001
+    validations:
+      required: true
