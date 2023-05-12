@@ -44,7 +44,9 @@ body:
       options:
         - Vanilla 1.20
         - Vanilla 1.19.4
-        - Modded 1.19.4  
+        - Modded 1.19.4
+    validations:
+      required: true
   - type: dropdown
     id: mapversion
     attributes:
@@ -61,3 +63,15 @@ body:
         - Alpha 001
     validations:
       required: true
+  - type: dropdown
+    id: rpversion
+    attributes:
+      label: Resourcepack Version
+      description: What Map version of our software are you running?
+      options:
+        - Latest Version (Included with the map)
+        - Older Version
+    validations:
+      required: true
+
+
