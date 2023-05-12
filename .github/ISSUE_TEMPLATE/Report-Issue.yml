@@ -27,13 +27,13 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: version
+    id: minecraftversionverify
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Are you playing Vanilla or Modded Minecraft?
+      multiple: false
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Vanilla
+        - Modded    
     validations:
       required: true
   - type: dropdown
