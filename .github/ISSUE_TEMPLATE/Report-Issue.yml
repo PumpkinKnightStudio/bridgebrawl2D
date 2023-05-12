@@ -35,16 +35,7 @@ body:
         - Vanilla
         - Modded    
     validations:
-      required: true
-   - type: dropdown
-    id: minecraftversion
-    attributes:
-      label: What Minecraft version are you seeing the problem on?
-      multiple: true
-      options:
-        - Vanilla 1.20
-        - Vanilla 1.19.4
-        - Modded 1.19.4    
+      required: true  
   - type: textarea
     id: logs
     attributes:
